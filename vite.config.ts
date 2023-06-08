@@ -10,4 +10,5 @@ export default defineConfig({
       lintOnStart: true,
     }),
   ],
+  publicDir: 'public',
 })
