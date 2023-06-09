@@ -20,6 +20,18 @@ export default defineConfig({
         id: 'top',
         title: '', // No toggle
       },
+      {
+        id: 'top1',
+        title: '', // No toggle
+      },
+      {
+        id: 'top2',
+        title: '', // No toggle
+      },
+      {
+        id: 'top3',
+        title: '', // No toggle
+      },
     ],
   },
   plugins: [HstVue()],
