@@ -1,5 +1,5 @@
 <script setup>
-import InternshipItem from './Internship.vue'
+import InternshipItem from './internship/Internship.vue'
 </script>
 <template>
   <Story title="Stages" group="top2" icon="mdi:briefcase-clock">

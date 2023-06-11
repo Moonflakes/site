@@ -1,5 +1,5 @@
 <script setup>
-import SchoolItem from './School.vue'
+import SchoolItem from './school/School.vue'
 </script>
 <template>
   <Story
@@ -45,4 +45,3 @@ import SchoolItem from './School.vue'
     </Variant>
   </Story>
 </template>
-<style src="./global.scss"/>

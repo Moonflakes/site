@@ -5,7 +5,7 @@
 <docs lang="md">
 <h1>Margot THIERY</h1>
 <h3 style="color:rgb(var(--_histoire-color-primary-500));">Développeuse fullstack JS</h3>
-<img src="/profil-1-square.png" style="border-radius: 50%; width: 30%;" alt="profil" title="profil">
+<img src="/profile-1-square.png" style="border-radius: 50%; width: 30%;" alt="profile" title="profile">
 <p>Ancienne neuropsychologue reconvertie dans la programmation. Je cherche un emploi de développeuse JS orienté front avec édition back si nécessaire pour des applications web ou mobile. J’ai une appétence particulière pour l’UI-UX et de l’expérience dans la réalisation de maquettes.</p>
 
 ---

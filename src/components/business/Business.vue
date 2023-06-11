@@ -5,14 +5,14 @@
     <span class="info">Équipe : </span>
     <button @click="buttonFilter = 'principal'">Principale</button>
     <button @click="buttonFilter = 'all'">Tous</button>
-    <div class="profils">
-      <Profil
-        v-for="item in team"
-        :key="item.id"
-        :image="item.image"
-        :name="item.name"
-        :job="item.job"
-        :show="teamState(item.tag, buttonFilter)"
+    <div class="profiles">
+      <Profile
+        v-for="mate in team"
+        :key="mate.id"
+        :image="mate.image"
+        :name="mate.name"
+        :job="mate.job"
+        :show="teamState(mate.tag, buttonFilter)"
       />
     </div>
   </div>
@@ -25,7 +25,7 @@
 
   <p>
     <span class="info">Stack : </span>
-    <ChipItem v-for="item in stack" :key="item.id" :chipName="item" />
+    <ChipItem v-for="techno in stack" :key="techno.id" :chipName="techno" />
   </p>
 </template>
-<style src="./global.scss"/>
+<style src="../global.scss"/>

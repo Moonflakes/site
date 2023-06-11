@@ -1,12 +1,19 @@
 import { defineComponent, ref } from 'vue'
-import ChipItem from './Chip.vue'
-import Profil from './Profil.vue'
+import ChipItem from '../chip/Chip.vue'
+import Profile from '../profile/Profile.vue'
+
+interface TeamData {
+  name: string
+  jon: string
+  image: string
+  tag: string
+}
 
 export default defineComponent({
   name: 'Business',
   components: {
     ChipItem,
-    Profil,
+    Profile,
   },
   props: {
     name: {
@@ -17,7 +24,6 @@ export default defineComponent({
     number: {
       required: true,
       type: Number,
-      default: 0,
     },
     stack: {
       required: true,
@@ -26,18 +32,11 @@ export default defineComponent({
     logo: {
       require: false,
       type: String,
+      default: '',
     },
     team: {
       required: true,
-      type: Array,
-      default: () => {
-        return [{
-          name: '',
-          job: '',
-          image: '',
-          tag: '',
-        }]
-      },
+      type: Array as Proptype<TeamData[]>,
     },
   },
   setup (props) {

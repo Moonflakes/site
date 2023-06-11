@@ -1,5 +1,14 @@
 import { defineComponent, computed } from 'vue'
-import Business from './Business.vue'
+import Business from '../business/Business.vue'
+import { type TeamData } from '../business/business.ts'
+
+interface BusinessData {
+  name: string
+  team: TeamData[]
+  number: number
+  stack: string[]
+  logo: string
+}
 
 export default defineComponent({
   name: 'Internship',
@@ -24,21 +33,7 @@ export default defineComponent({
     },
     business: {
       required: true,
-      type: Object,
-      default: () => {
-        return {
-          name: '',
-          team: [{
-            name: '',
-            job: '',
-            image: '',
-            tag: '',
-          }],
-          number: 0,
-          stack: [],
-          logo: '',
-        }
-      },
+      type: Object as Proptype<BusinessData>,
     },
   },
   setup (props) {

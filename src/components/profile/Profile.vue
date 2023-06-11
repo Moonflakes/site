@@ -1,4 +1,4 @@
-<script lang="ts" src="./profil.ts" />
+<script lang="ts" src="./profile.ts" />
 
 <template>
   <div class="container" v-show="show">
@@ -11,4 +11,4 @@
     </div>
   </div>
 </template>
-<style src="./profil.scss"/>
+<style src="./profile.scss"/>
