@@ -4,9 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview",
     "story:dev": "histoire dev",
     "story:build": "histoire build",
     "story:preview": "histoire preview",
