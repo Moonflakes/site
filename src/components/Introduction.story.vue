@@ -1,9 +1,3 @@
-<script>
-export default {
-  // eslint-disable-next-line comma-dangle
-  name: 'TodoItem',
-}
-</script>
 <template>
   <Story group="top" docs-only icon="carbon:bookmark" />
 </template>

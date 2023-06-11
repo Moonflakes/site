@@ -28,5 +28,4 @@
     <ChipItem v-for="item in stack" :key="item.id" :chipName="item" />
   </p>
 </template>
-<style src="./global.scss">
-</style>
+<style src="./global.scss"/>

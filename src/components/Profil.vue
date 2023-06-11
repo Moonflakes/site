@@ -11,5 +11,4 @@
     </div>
   </div>
 </template>
-<style src="./profil.scss">
-</style>
+<style src="./profil.scss"/>

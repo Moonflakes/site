@@ -24,5 +24,4 @@
 
   <slot name="description"></slot>
 </template>
-<style src="./global.scss">
-</style>
+<style src="./global.scss"/>

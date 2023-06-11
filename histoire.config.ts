@@ -18,19 +18,19 @@ export default defineConfig({
     groups: [
       {
         id: 'top',
-        title: '', // No toggle
+        title: '',
       },
       {
         id: 'top1',
-        title: '', // No toggle
+        title: '',
       },
       {
         id: 'top2',
-        title: '', // No toggle
+        title: '',
       },
       {
         id: 'top3',
-        title: '', // No toggle
+        title: '',
       },
     ],
   },

@@ -1,12 +1,6 @@
 <script setup>
 import SchoolItem from './School.vue'
 </script>
-<script>
-export default {
-  // eslint-disable-next-line comma-dangle
-  name: 'SchoolStory',
-}
-</script>
 <template>
   <Story
     title="Formations"
@@ -51,5 +45,4 @@ export default {
     </Variant>
   </Story>
 </template>
-<style src="./global.scss">
-</style>
+<style src="./global.scss"/>

@@ -1,9 +1,4 @@
-<script lang="ts" src="./school.ts">
-export default {
-  // eslint-disable-next-line comma-dangle
-  name: 'SchoolItem',
-}
-</script>
+<script lang="ts" src="./school.ts"/>
 
 <template>
   <slot name="title"></slot>
