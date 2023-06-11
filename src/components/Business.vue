@@ -21,7 +21,7 @@
     <span class="info">Taille : </span> <span>{{ number }}</span>
   </p>
 
-  <p><span class="info">Activité : </span> <slot name="activity"></slot></p>
+  <p><span class="info">Activité : </span> <slot name="activity"/></p>
 
   <p>
     <span class="info">Stack : </span>
