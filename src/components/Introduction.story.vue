@@ -5,11 +5,7 @@ export default {
 }
 </script>
 <template>
-  <Story
-    group="top"
-    docs-only
-    icon="carbon:bookmark"
-  />
+  <Story group="top" docs-only icon="carbon:bookmark" />
 </template>
 
 <docs lang="md">

@@ -6,7 +6,10 @@ export default {
 </script>
 
 <template>
-    <slot name="title"></slot>
-    <p>De {{formattedDateFrom}} à {{formattedDateTo}}, à <b class="primaryColor">{{city}}</b></p>
-    <slot name="description"></slot>
+  <slot name="title"></slot>
+  <p>
+    De {{ formattedDateFrom }} à {{ formattedDateTo }}, à
+    <b class="primaryColor">{{ city }}</b>
+  </p>
+  <slot name="description"></slot>
 </template>
