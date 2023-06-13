@@ -41,7 +41,11 @@ export default defineComponent({
   },
   setup (props) {
     const teamState = (tag: string, buttonFilter: string): boolean => {
-      if (buttonFilter === 'all') { return true } else if (tag === buttonFilter) { return true }
+      if (buttonFilter === 'all') {
+        return true
+      } else if (tag === buttonFilter) {
+        return true
+      }
       return false
     }
 

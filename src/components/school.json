@@ -1,0 +1,22 @@
+[
+  {
+    "name": "42",
+    "city": "Paris",
+    "dateFrom": "11/01/2017",
+    "dateTo": "11/01/2021",
+    "degreeName": "Architecte en technologie numérique",
+    "description": [
+      "Niveau 14 (junior)",
+      "Projet portant sur le développement d'un site web en PHP avec BDD MySQL",
+      "Projet de reproduction d'une application web de streaming en React"
+    ]
+  },
+  {
+    "schoolName": "Université de savoie",
+    "city": "Chambéry",
+    "dateFrom": "09/01/2011",
+    "dateTo": "09/01/2013",
+    "degreeName": "Master de psychologie spécialisé en neuropsychologie",
+    "description": ["Mention bien"]
+  }
+]
