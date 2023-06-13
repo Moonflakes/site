@@ -1,4 +1,4 @@
-.primaryColor {
+strong {
   color: rgb(99, 102, 241);
 }
 
@@ -8,7 +8,7 @@ h5 {
   text-align: end;
 }
 
-:is(h1, h2, h3, h4, h5, h6, p) {
+:is(h1, h2, h3, h4, h5, h6, p, strong) {
   font-weight: 300;
 }
 

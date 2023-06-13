@@ -16,7 +16,7 @@ import internships from './internships.json'
         :business="internship.business"
       >
         <template #title>
-          <h2 class="primaryColor">{{ internship.job }}</h2>
+          <h2><strong>{{ internship.job }}</strong></h2>
         </template>
         <template #activity>
           <span>{{ internship.business.activity }}</span>

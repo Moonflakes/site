@@ -3,11 +3,11 @@
 <template>
   <slot name="title"/>
   <h5>
-    chez <span class="primaryColor">{{ business.name }}</span>
+    chez <strong>{{ business.name }}</strong>
   </h5>
   <h5>
     De {{ formattedDateFrom }} à {{ formattedDateTo }}, à
-    <span class="primaryColor">{{ city }}</span>
+    <strong>{{ city }}</strong>
   </h5>
 
   <Business
