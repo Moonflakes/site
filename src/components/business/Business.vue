@@ -12,7 +12,7 @@
         :image="mate.image"
         :name="mate.name"
         :job="mate.job"
-        :mateIsShown="mateIsShown(mate.tag, buttonFilter)"
+        v-show="mateIsShown(mate.tag)"
       />
     </div>
   </div>

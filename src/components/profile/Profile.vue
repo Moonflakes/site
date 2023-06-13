@@ -1,7 +1,7 @@
 <script lang="ts" src="./profile.ts" />
 
 <template>
-  <div class="container" v-show="mateIsShown">
+  <div class="container">
     <div class="item">
       <img :src="image" :alt="name" :title="name" />
     </div>

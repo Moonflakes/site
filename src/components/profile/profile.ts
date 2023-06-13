@@ -15,11 +15,6 @@ export default defineComponent({
       required: true,
       type: String,
     },
-    mateIsShown: {
-      require: false,
-      type: Boolean,
-      default: false,
-    },
   },
   setup (props) {
     return {

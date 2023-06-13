@@ -43,10 +43,9 @@ export default defineComponent({
     const switchMate = (team: string): void => {
       buttonFilter.value = team
     }
-    const mateIsShown = (tag: string, buttonFilter: string): boolean => {
-      if (buttonFilter === 'all' || tag === buttonFilter) {
-        return true
-      }
+    const mateIsShown = (tag: string): boolean => {
+      console.log(buttonFilter.value, tag)
+      if (buttonFilter.value === 'all' || tag === buttonFilter.value) { return true }
       return false
     }
 
