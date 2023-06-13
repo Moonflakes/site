@@ -17,9 +17,8 @@ export default defineComponent({
   },
   props: {
     name: {
-      required: false,
+      required: true,
       type: String,
-      default: 'Paris',
     },
     number: {
       required: true,
@@ -40,25 +39,21 @@ export default defineComponent({
     },
   },
   setup (props) {
-    const teamState = (tag: string, buttonFilter: string): boolean => {
-      if (buttonFilter === 'all') {
-        return true
-      } else if (tag === buttonFilter) {
+    const buttonFilter = ref('principal')
+    const switchMate = (team: string): void => {
+      buttonFilter.value = team
+    }
+    const mateIsShown = (tag: string, buttonFilter: string): boolean => {
+      if (buttonFilter === 'all' || tag === buttonFilter) {
         return true
       }
       return false
     }
 
-    const switchMate = (team: string): void => {
-      buttonFilter.value = team
-    }
-
-    const buttonFilter = ref('principal')
-
     return {
-      teamState,
       buttonFilter,
       switchMate,
+      mateIsShown,
     }
   },
 })

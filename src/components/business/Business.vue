@@ -12,7 +12,7 @@
         :image="mate.image"
         :name="mate.name"
         :job="mate.job"
-        :show="teamState(mate.tag, buttonFilter)"
+        :mateIsShown="mateIsShown(mate.tag, buttonFilter)"
       />
     </div>
   </div>
@@ -24,7 +24,7 @@
 
   <p>
     <span class="info">Activité : </span>
-    <slot name="activity" />
+    <slot />
   </p>
 
   <p>

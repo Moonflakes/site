@@ -19,17 +19,14 @@ export default defineComponent({
     city: {
       required: true,
       type: String,
-      default: 'Paris',
     },
     dateFrom: {
       required: true,
       type: Date,
-      default: '',
     },
     dateTo: {
       required: true,
       type: Date,
-      default: '',
     },
     business: {
       required: true,
