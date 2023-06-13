@@ -1,6 +1,7 @@
 import { defineComponent, computed } from 'vue'
 import Business from '../business/Business.vue'
 import { type TeamData } from '../business/business.ts'
+import { useFormatedDate } from '../hooks.ts'
 
 interface BusinessData {
   name: string
@@ -34,14 +35,9 @@ export default defineComponent({
     },
   },
   setup (props) {
-    const formatedDate = (date: Date | string): string => {
-      const dateTime = new Date(date)
-      const month = dateTime.toLocaleString('default', { month: 'long' })
-      const year = dateTime.getFullYear()
-      return `${month} ${year}`
-    }
-    const formattedDateFrom = computed(() => formatedDate(props.dateFrom))
-    const formattedDateTo = computed(() => formatedDate(props.dateTo))
+    const formattedDateFrom = computed(() => useFormatedDate(props.dateFrom))
+    const formattedDateTo = computed(() => useFormatedDate(props.dateTo))
+
     return {
       formattedDateFrom,
       formattedDateTo,
