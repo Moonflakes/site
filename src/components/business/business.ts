@@ -45,10 +45,16 @@ export default defineComponent({
       return false
     }
 
+    const switchMate = (team: string): void => {
+      buttonFilter.value = team
+    }
+
     const buttonFilter = ref('principal')
+
     return {
       teamState,
       buttonFilter,
+      switchMate,
     }
   },
 })

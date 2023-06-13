@@ -34,6 +34,7 @@ export default defineComponent({
 
     const formattedDateFrom = computed(() => formatedDate(props.dateFrom))
     const formattedDateTo = computed(() => formatedDate(props.dateTo))
+
     return {
       formattedDateFrom,
       formattedDateTo,

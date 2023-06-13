@@ -3,8 +3,8 @@
 <template>
   <div>
     <span class="info">Équipe : </span>
-    <button @click="buttonFilter = 'principal'">Principale</button>
-    <button @click="buttonFilter = 'all'">Tous</button>
+    <button @click="switchMate('principal')">Principale</button>
+    <button @click="switchMate('all')">Tous</button>
     <div class="profiles">
       <Profile
         v-for="mate in team"
@@ -18,10 +18,14 @@
   </div>
 
   <p>
-    <span class="info">Taille : </span> <span>{{ number }}</span>
+    <span class="info">Taille : </span>
+    <span>{{ number }}</span>
   </p>
 
-  <p><span class="info">Activité : </span> <slot name="activity"/></p>
+  <p>
+    <span class="info">Activité : </span>
+    <slot name="activity" />
+  </p>
 
   <p>
     <span class="info">Stack : </span>

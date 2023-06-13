@@ -4,7 +4,7 @@
   <slot name="title"/>
   <p>
     De {{ formattedDateFrom }} à {{ formattedDateTo }}, à
-    <b class="primaryColor">{{ city }}</b>
+    <b class="htw-text-primary-500">{{ city }}</b>
   </p>
   <slot name="description"/>
 </template>

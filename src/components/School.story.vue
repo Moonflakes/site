@@ -15,7 +15,7 @@ import SchoolItem from './school/School.vue'
         :date-to="'11/01/2021'"
       >
         <template #title>
-          <h2 class="primaryColor">Architecte en technologie numérique</h2>
+          <h2 class="htw-text-primary-500">Architecte en technologie numérique</h2>
         </template>
         <template #description>
           <p>
@@ -34,7 +34,7 @@ import SchoolItem from './school/School.vue'
         :date-to="'09/01/2013'"
       >
         <template #title>
-          <h2 class="primaryColor">
+          <h2 class="htw-text-primary-500">
             Master de psychologie spécialisé en neuropsychologie
           </h2>
         </template>
