@@ -9,9 +9,7 @@
       <Profile
         v-for="mate in team"
         :key="mate.id"
-        :image="mate.image"
-        :name="mate.name"
-        :job="mate.job"
+        :mate="mate"
         v-show="mateIsShown(mate.tag)"
       />
     </div>

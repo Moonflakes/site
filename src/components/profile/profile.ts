@@ -1,23 +1,20 @@
-import { defineComponent } from 'vue'
+import { defineComponent, toRefs } from 'vue'
+import { type TeamData } from '../business/business.ts'
 
 export default defineComponent({
   name: 'Profile',
   props: {
-    name: {
+    mate: {
       required: true,
-      type: String,
-    },
-    job: {
-      required: true,
-      type: String,
-    },
-    image: {
-      required: true,
-      type: String,
+      type: Object as Proptype<TeamData>,
     },
   },
   setup (props) {
+    const { name, job, image } = toRefs(props.mate)
     return {
+      name,
+      job,
+      image,
     }
   },
 })
