@@ -1,7 +1,7 @@
-import { defineComponent, computed } from 'vue'
+import { defineComponent } from 'vue'
 import Business from '../business/Business.vue'
 import { type TeamData } from '../business/business'
-import { useFormatedDate } from '../hooks'
+import { useFormattedDateRange } from '../hooks'
 
 interface BusinessData {
   name: string
@@ -35,12 +35,6 @@ export default defineComponent({
     },
   },
   setup (props) {
-    const formattedDateFrom = computed(() => useFormatedDate(props.dateFrom))
-    const formattedDateTo = computed(() => useFormatedDate(props.dateTo))
-
-    return {
-      formattedDateFrom,
-      formattedDateTo,
-    }
+    return useFormattedDateRange(props)
   },
 })
