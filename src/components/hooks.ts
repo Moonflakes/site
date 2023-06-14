@@ -1,4 +1,4 @@
-function formatedDate (date: Date | string): string {
+function formattedDate (date: Date | string): string {
   const dateTime = new Date(date)
   const month = dateTime.toLocaleString('default', { month: 'long' })
   const year = dateTime.getFullYear()
@@ -6,8 +6,8 @@ function formatedDate (date: Date | string): string {
 }
 
 export const useFormattedDateRange = ({ dateFrom, dateTo }): object => {
-  const formattedDateFrom = formatedDate(dateFrom)
-  const formattedDateTo = formatedDate(dateTo)
+  const formattedDateFrom = formattedDate(dateFrom)
+  const formattedDateTo = formattedDate(dateTo)
   return {
     formattedDateFrom,
     formattedDateTo,
