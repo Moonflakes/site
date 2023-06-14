@@ -1,5 +1,3 @@
-<script lang="ts" src="./internship.ts" />
-
 <template>
   <h2>
     <strong><slot name="title" /></strong>
@@ -26,4 +24,6 @@
 
   <slot name="description" />
 </template>
+
+<script lang="ts" src="./internship.ts" />
 <style src="../global.scss"/>

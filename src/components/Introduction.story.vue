@@ -13,11 +13,11 @@
 <h4>RÉSEAUX</h4>
 <div class="content">
     <div class="item">
-        <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/linkedin.svg" width="20" height="20" class="color-svg">
+        <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/linkedin.svg" width="20" height="20" class="filtered-svg">
         <a href="https://www.linkedin.com/in/margot-thiery-4bb5a291/">@margot-thiery</a>
     </div>
     <div class="item">
-        <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/github.svg" width="20" height="20" class="color-svg">
+        <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/brands/github.svg" width="20" height="20" class="filtered-svg">
         <a href="https://github.com/Moonflakes">@moonflakes</a>
     </div>
 </div>
@@ -27,15 +27,15 @@
 <h4>ACCESSIBILITÉ</h4>
 <div class="content">
     <div class="item">
-        <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/house.svg" width="20" height="20" class="color-svg">
+        <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/house.svg" width="20" height="20" class="filtered-svg">
         <p>Clichy</p>
     </div>
     <div class="item">
-        <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/location-dot.svg" width="20" height="20" class="color-svg">
+        <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/location-dot.svg" width="20" height="20" class="filtered-svg">
         <p>Île de france</p>
     </div>
     <div class="item">
-        <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/laptop.svg" width="20" height="20" class="color-svg">
+        <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/laptop.svg" width="20" height="20" class="filtered-svg">
         <p>Full remote ou hybride</p>
     </div>
 </div>
@@ -45,24 +45,26 @@
 <h4>CONTACTS</h4>
 <div class="content">
     <div class="item">
-        <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/mobile.svg" width="20" height="20" class="color-svg">
+        <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/mobile.svg" width="20" height="20" class="filtered-svg">
         <p>07 60 75 21 50</p>
     </div>
     <div class="item">
-        <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/envelope.svg" width="20" height="20" class="color-svg">
+        <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/envelope.svg" width="20" height="20" class="filtered-svg">
         <a href="mailto:m.bluth@example.com">margot.thiery@gmail.com</a>
     </div>
 </div>
 
 <style>
-.color-svg {
+.filtered-svg {
     filter: invert(54%) sepia(54%) saturate(6917%) hue-rotate(224deg) brightness(97%) contrast(94%);
     margin-right: 10px;
 }
+
 .content {
     display: flex;
     justify-content: space-around;
 }
+
 .item {
     display: flex;
     align-items: center;

@@ -5,12 +5,12 @@
     <span class="info">Équipe : </span>
     <button @click="switchMate('principal')">Principale</button>
     <button @click="switchMate('all')">Tous</button>
-    <div class="profiles">
+    <div class="profiles-container">
       <Profile
         v-for="mate in team"
         :key="mate.id"
         :mate="mate"
-        v-show="mateIsShown(mate.tag)"
+        v-show="isMateShown(mate.tag)"
       />
     </div>
   </div>
@@ -30,4 +30,5 @@
     <ChipItem v-for="techno in stack" :key="techno.id" :chipName="techno" />
   </p>
 </template>
+
 <style src="../global.scss"/>

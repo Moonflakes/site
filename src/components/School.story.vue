@@ -2,6 +2,7 @@
 import SchoolItem from './school/School.vue'
 import schools from './school.json'
 </script>
+
 <template>
   <Story
     title="Formations"
@@ -18,10 +19,11 @@ import schools from './school.json'
         <template #title>
           <h2 class="htw-text-primary-500">{{ school.degreeName }}</h2>
         </template>
+
         <template #description>
-          <div v-for="p in school.description" :key="p.id">
-            <span>{{ p }}</span
-            ><br v-show="school.description.lenght > p.id" />
+          <div v-for="(description, index) in school.description" :key="index">
+            <span>{{ description }}</span
+            ><br v-show="school.description.lenght > index" />
           </div>
         </template>
       </SchoolItem>

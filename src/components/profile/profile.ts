@@ -1,5 +1,5 @@
-import { defineComponent, toRefs } from 'vue'
-import { type TeamData } from '../business/business.ts'
+import { defineComponent, toRefs, type Proptype } from 'vue'
+import type TeamData from '../../types/teamData'
 
 export default defineComponent({
   name: 'Profile',

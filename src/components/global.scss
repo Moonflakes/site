@@ -22,7 +22,16 @@ p {
   font-style: italic;
 }
 
-.profiles {
+.profiles-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+.ma-6 {
+  margin: 6px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
 }

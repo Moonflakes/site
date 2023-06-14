@@ -1,5 +1,3 @@
-<script lang="ts" src="./school.ts"/>
-
 <template>
   <slot name="title"/>
   <p>
@@ -8,3 +6,5 @@
   </p>
   <slot name="description"/>
 </template>
+
+<script lang="ts" src="./school.ts"/>

@@ -1,13 +1,6 @@
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref, type Proptype } from 'vue'
 import ChipItem from '../chip/Chip.vue'
 import Profile from '../profile/Profile.vue'
-
-export interface TeamData {
-  name: string
-  jon: string
-  image: string
-  tag: string
-}
 
 export default defineComponent({
   name: 'Business',
@@ -43,7 +36,7 @@ export default defineComponent({
     const switchMate = (team: string): void => {
       buttonFilter.value = team
     }
-    const mateIsShown = (tag: string): boolean => {
+    const isMateShown = (tag: string): boolean => {
       if (buttonFilter.value === 'all' || tag === buttonFilter.value) { return true }
       return false
     }
@@ -51,7 +44,7 @@ export default defineComponent({
     return {
       buttonFilter,
       switchMate,
-      mateIsShown,
+      isMateShown,
     }
   },
 })

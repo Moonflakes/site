@@ -1,6 +1,6 @@
-import { defineComponent } from 'vue'
+import { defineComponent, type Proptype } from 'vue'
 import Business from '../business/Business.vue'
-import { type TeamData } from '../business/business'
+import type TeamData from '../../types/teamData'
 import { useFormattedDateRange } from '../../composables/hooks'
 
 interface BusinessData {

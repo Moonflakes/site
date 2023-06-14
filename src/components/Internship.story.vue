@@ -2,6 +2,7 @@
 import InternshipItem from './internship/Internship.vue'
 import internships from './internships.json'
 </script>
+
 <template>
   <Story title="Stages" group="top2" icon="mdi:briefcase-clock">
     <Variant
@@ -18,6 +19,7 @@ import internships from './internships.json'
         <template #title>
           {{ internship.job }}
         </template>
+
         <template #activity>
           {{ internship.business.activity }}
         </template>
