@@ -1,7 +1,7 @@
 import { defineComponent, computed } from 'vue'
 import Business from '../business/Business.vue'
-import { type TeamData } from '../business/business.ts'
-import { useFormatedDate } from '../hooks.ts'
+import { type TeamData } from '../business/business'
+import { useFormatedDate } from '../hooks'
 
 interface BusinessData {
   name: string

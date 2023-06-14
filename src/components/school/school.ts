@@ -1,5 +1,5 @@
 import { defineComponent, computed } from 'vue'
-import { useFormatedDate } from '../hooks.ts'
+import { useFormatedDate } from '../hooks'
 
 export default defineComponent({
   name: 'SchoolItem',

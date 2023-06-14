@@ -2,7 +2,7 @@ import { defineComponent, ref } from 'vue'
 import ChipItem from '../chip/Chip.vue'
 import Profile from '../profile/Profile.vue'
 
-interface TeamData {
+export interface TeamData {
   name: string
   jon: string
   image: string
