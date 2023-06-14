@@ -22,7 +22,7 @@
 
   <p>
     <span class="info">Activité : </span>
-    <slot />
+    <span><slot /></span>
   </p>
 
   <p>

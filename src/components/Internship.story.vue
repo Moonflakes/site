@@ -16,10 +16,10 @@ import internships from './internships.json'
         :business="internship.business"
       >
         <template #title>
-          <h2><strong>{{ internship.job }}</strong></h2>
+          {{ internship.job }}
         </template>
         <template #activity>
-          <span>{{ internship.business.activity }}</span>
+          {{ internship.business.activity }}
         </template>
       </InternshipItem>
     </Variant>
