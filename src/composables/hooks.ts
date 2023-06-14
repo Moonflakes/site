@@ -5,7 +5,7 @@ function formattedDate (date: Date | string): string {
   return `${month} ${year}`
 }
 
-export const useFormattedDateRange = ({ dateFrom, dateTo }): object => {
+const useFormattedDateRange = ({ dateFrom, dateTo }): object => {
   const formattedDateFrom = formattedDate(dateFrom)
   const formattedDateTo = formattedDate(dateTo)
   return {
@@ -13,3 +13,5 @@ export const useFormattedDateRange = ({ dateFrom, dateTo }): object => {
     formattedDateTo,
   }
 }
+
+export { useFormattedDateRange }

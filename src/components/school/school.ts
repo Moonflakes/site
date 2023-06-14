@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import { useFormattedDateRange } from '../hooks'
+import { useFormattedDateRange } from '../../composables/hooks'
 
 export default defineComponent({
   name: 'SchoolItem',
