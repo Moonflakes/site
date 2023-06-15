@@ -1,7 +1,8 @@
-interface TeamData {
+type TeamData = {
   name: string
-  jon: string
+  job: string
   image: string
   tag: string
 }
+
 export default TeamData

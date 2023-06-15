@@ -1,9 +1,10 @@
-import { defineComponent, type Proptype } from 'vue'
+import { defineComponent } from 'vue'
+import type { PropType } from 'vue'
 import Business from '../business/Business.vue'
 import type TeamData from '../../types/teamData'
-import { useFormattedDateRange } from '../../composables/hooks'
+import useFormattedDateRange from '../../composables/formattedDateRange'
 
-interface BusinessData {
+type BusinessData = {
   name: string
   team: TeamData[]
   number: number
@@ -31,10 +32,15 @@ export default defineComponent({
     },
     business: {
       required: true,
-      type: Object as Proptype<BusinessData>,
+      type: Object as PropType<BusinessData>,
     },
   },
   setup (props) {
-    return useFormattedDateRange(props)
+    const { formattedDateFrom, formattedDateTo } = useFormattedDateRange(props)
+
+    return {
+      formattedDateFrom,
+      formattedDateTo,
+    }
   },
 })

@@ -1,4 +1,5 @@
-import { defineComponent, toRefs, type Proptype } from 'vue'
+import { defineComponent, toRefs } from 'vue'
+import type { PropType } from 'vue'
 import type TeamData from '../../types/teamData'
 
 export default defineComponent({
@@ -6,7 +7,7 @@ export default defineComponent({
   props: {
     mate: {
       required: true,
-      type: Object as Proptype<TeamData>,
+      type: Object as PropType<TeamData>,
     },
   },
   setup (props) {

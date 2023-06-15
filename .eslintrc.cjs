@@ -22,6 +22,7 @@ module.exports = {
     // 'comma-dangle': ['error', 'always-multiline'],
     '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
     'vue/multi-word-component-names': 0,
-    "@typescript-eslint/consistent-type-imports": "error"
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+    "@typescript-eslint/explicit-function-return-type": "off"
   },
 }

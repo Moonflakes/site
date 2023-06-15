@@ -1,4 +1,6 @@
-import { defineComponent, ref, type Proptype } from 'vue'
+import { defineComponent, ref } from 'vue'
+import type { PropType } from 'vue'
+import type TeamData from '../../types/teamData'
 import ChipItem from '../chip/Chip.vue'
 import Profile from '../profile/Profile.vue'
 
@@ -28,7 +30,7 @@ export default defineComponent({
     },
     team: {
       required: true,
-      type: Array as Proptype<TeamData[]>,
+      type: Array as PropType<TeamData[]>,
     },
   },
   setup (props) {

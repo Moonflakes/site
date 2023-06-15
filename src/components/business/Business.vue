@@ -30,5 +30,3 @@
     <ChipItem v-for="techno in stack" :key="techno.id" :chipName="techno" />
   </p>
 </template>
-
-<style src="../global.scss"/>

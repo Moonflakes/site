@@ -26,4 +26,3 @@
 </template>
 
 <script lang="ts" src="./internship.ts" />
-<style src="../global.scss"/>

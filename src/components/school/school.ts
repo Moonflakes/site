@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import { useFormattedDateRange } from '../../composables/hooks'
+import useFormattedDateRange from '../../composables/formattedDateRange'
 
 export default defineComponent({
   name: 'SchoolItem',
@@ -17,7 +17,13 @@ export default defineComponent({
       type: Date,
     },
   },
+
   setup (props) {
-    return useFormattedDateRange(props)
+    const { formattedDateFrom, formattedDateTo } = useFormattedDateRange(props)
+
+    return {
+      formattedDateFrom,
+      formattedDateTo,
+    }
   },
 })
